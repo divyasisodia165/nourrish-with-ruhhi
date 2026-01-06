@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nourrish With Ruhhi - Certified Dietitian & Nutritionist</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-pZMZ+fXk1Pqcd4i6XeWec3y7Kq3ZzQqZ+V6GqW1GV6g/9IYzUOi+V5kD3wHldW0hP3yEtT7g8qX8n1eF0hAw4g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         * {
             margin: 0;
@@ -567,6 +571,13 @@
             font-size: 1.2rem;
         }
 
+        .contact-icon {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+        }
+
+
         /* Footer */
         footer {
             background-color: #0f3a21;
@@ -1014,16 +1025,26 @@
             <div class="alternative-contact">
                 <p>Prefer to connect directly?</p>
                 <div class="contact-links">
+                    <!-- WhatsApp -->
                     <a href="https://wa.me/918830543452" class="contact-link" target="_blank">
-                        <span class="contact-icon">💬</span>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="contact-icon"
+                            alt="WhatsApp" style="width: 28px; height: 28px;" />
                         WhatsApp
                     </a>
                     <a href="tel:+918830543452" class="contact-link">
-                        <span class="contact-icon">📞</span>
+                        <!-- Inline SVG for phone -->
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
+                            height="20" fill="#0f3a21">
+                            <path
+                                d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 22.5 1.5 13.93 1.5 3a1 1 0 011-1H6a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.21 1.11l-2.2 2.2z" />
+                        </svg>
                         Call Now
                     </a>
+
+                    <!-- Instagram -->
                     <a href="https://instagram.com/nourrish_with_ruhhi" class="contact-link" target="_blank">
-                        <span class="contact-icon">📸</span>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+                            class="contact-icon" alt="Instagram" />
                         Instagram
                     </a>
                 </div>
@@ -1035,12 +1056,31 @@
     <footer>
         <div class="footer-content">
             <div class="footer-contact">
-                <span>📸 Instagram: <a href="https://instagram.com/nourrish_with_ruhhi"
-                        target="_blank">@nourrish_with_ruhhi</a></span>
+                <span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+                        class="contact-icon" alt="Instagram" />
+                    <a href="https://instagram.com/nourrish_with_ruhhi" target="_blank">@nourrish_with_ruhhi</a>
+                </span>
                 <span class="footer-divider">•</span>
-                <span>📞 <a href="tel:+918830543452">+91-88305-43452</a></span>
+
+                <!-- Call -->
+                <span>
+                    <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16"
+                        height="16" fill="white">
+                        <path
+                            d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 22.5 1.5 13.93 1.5 3a1 1 0 011-1H6a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.21 1.11l-2.2 2.2z" />
+                    </svg>
+                    <a href="tel:+918830543452">+91-88305-43452</a>
+                </span>
                 <span class="footer-divider">•</span>
-                <span>💬 <a href="https://wa.me/918830543452" target="_blank">WhatsApp</a></span>
+
+                <!-- WhatsApp -->
+                <span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="contact-icon"
+                        alt="WhatsApp" style="width: 23px; height: 23px;" />
+                    <a href="https://wa.me/918830543452" target="_blank">WhatsApp</a>
+                </span>
+
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 Nourrish With Ruhhi. All rights reserved.</p>
