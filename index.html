@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nourrish With Ruhhi - Certified Dietitian & Nutritionist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+        }
+
+        /* Header */
+        header {
+            background-color: #d9ddc4;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .brand-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #d9ddc4;
+            padding: 1rem 2rem 4rem 2rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 3rem;
+            height: 550px;
+        }
+
+        .hero-content {
+            max-width: 500px;
+        }
+
+        .hero-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 0rem;
+            color: #1a1a1a;
+            margin-left: 2px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+            font-weight: 700;
+        }
+
+        .credentials {
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .hero-description {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.9rem 2rem;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            background-color: #1a4d2e;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #0f3a21;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: #f5f5f0;
+            color: #1a1a1a;
+        }
+
+        .btn-secondary:hover {
+            background-color: #a3ad8a;
+            transform: translateY(-2px);
+        }
+
+        /* Hero Image */
+        .hero-image-container {
+            background: linear-gradient(135deg, #b8c19f 0%, #9da886 100%);
+            padding: 2rem;
+            border-radius: 30px;
+            max-width: 450px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-image {
+            background-color: white;
+            border-radius: 20px;
+            padding: 1.5rem;
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* image stretch + cover container */
+            object-position: center;
+        }
+
+
+        /* Mission Section */
+        .mission {
+            background-color: #0f3a21;
+            color: white;
+            padding: 3rem 4rem;
+            margin: 0;
+            width: 100%;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+
+        /* OUTER AREA COLOR */
+        .mission-section {
+            background-color: #f5f5f0;
+            padding: 4rem 2rem 0rem 2rem;
+        }
+
+
+        .mission h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        .btn-light {
+            background-color: #f5f5f0;
+            color: #1a1a1a;
+        }
+
+        .btn-light:hover {
+            background-color: #a3ad8a;
+        }
+
+        /* Services Section */
+        .services {
+            background-color: #f5f5f0;
+            padding: 3rem 2rem 2rem 2rem;
+        }
+
+        .services h2 {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            padding-left: 2rem;
+            text-align: center;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .service-card {
+            background-color: white;
+            border-radius: 20px;
+            padding: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(26, 77, 46, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+
+        .service-card p {
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            color: #2a2a2a;
+        }
+
+        .btn-service {
+            width: 100%;
+            background-color: #1a4d2e;
+            color: white;
+        }
+
+        .btn-service:hover {
+            background-color: #0f3a21;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: #f5f5f0;
+            padding: 2rem 2rem 1.5rem 2rem;
+        }
+
+        .testimonials-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .testimonials-header h2 {
+            font-size: 2.5rem;
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background-color: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .testimonial-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #1a4d2e 0%, #2d6b4a 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .testimonial-info {
+            flex-grow: 1;
+        }
+
+        .testimonial-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #1a1a1a;
+            margin-bottom: 0.25rem;
+        }
+
+        .testimonial-outcome {
+            font-size: 0.9rem;
+            color: #1a4d2e;
+            font-weight: 500;
+        }
+
+        .testimonial-quote {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #2a2a2a;
+            font-style: italic;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .testimonial-quote::before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: -5px;
+            font-size: 3rem;
+            color: #b8c19f;
+            line-height: 1;
+        }
+
+        .testimonials-cta {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        /* FAQ Section */
+        .faq {
+            background-color: #f5f5f0;
+            padding: 2rem 2rem 4rem 2rem;
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .faq-header h2 {
+            font-size: 2.5rem;
+            color: #1a1a1a;
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .faq-item {
+            background-color: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .faq-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+        }
+
+        .faq-question {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1a4d2e;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .faq-question::before {
+            content: "Q:";
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .faq-answer {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #2a2a2a;
+            padding-left: 2rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: #d9ddc4;
+            color: #1a4d2e;
+            padding: 4rem 2rem;
+        }
+
+        .contact-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .contact-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-subtext {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form {
+            background-color: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            color: #1a1a1a;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.9rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #1a4d2e;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .btn-submit {
+            width: 100%;
+            background-color: #1a4d2e;
+            color: white;
+            padding: 1rem;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+        }
+
+        .btn-submit:hover {
+            background-color: #0f3a21;
+        }
+
+        .alternative-contact {
+            text-align: center;
+            margin-top: 2.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .alternative-contact p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.5rem;
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 25px;
+            color: #0f3a21;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .contact-link:hover {
+            background-color: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
+        }
+
+        .contact-icon {
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0f3a21;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+
+        .footer-contact a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-contact a:hover {
+            opacity: 0.8;
+        }
+
+        .footer-divider {
+            display: inline-block;
+            margin: 0 0.5rem;
+        }
+
+        .footer-bottom {
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+
+            /* Hero Section */
+            .hero {
+                flex-direction: column;
+                /* vertically stack content */
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                height: auto;
+                /* auto height for mobile */
+                padding: 1.5rem 1rem 3rem 1rem;
+            }
+
+            .hero-content {
+                max-width: 100%;
+                /* full width for mobile */
+                text-align: center;
+            }
+
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero-content h2 {
+                font-size: 1.8rem;
+            }
+
+            .cta-buttons {
+                justify-content: center;
+            }
+
+            .hero-image-container {
+                max-width: 90%;
+                /* smaller width for mobile */
+                padding: 1rem;
+                height: auto;
+            }
+
+            .hero-image {
+                padding: 1rem;
+                height: auto;
+            }
+
+            .image-placeholder {
+                min-height: 250px;
+                /* mobile friendly */
+            }
+
+            /* Mission Section */
+            .mission {
+                flex-direction: column;
+                text-align: center;
+                padding: 2rem 1rem;
+            }
+
+            .mission h2 {
+                font-size: 2rem;
+            }
+
+            /* Services Section */
+            .services h2 {
+                font-size: 2rem;
+                padding-left: 0;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                /* single column on mobile */
+                gap: 1.5rem;
+                padding: 0 1rem;
+            }
+
+            /* Testimonials Section */
+            .testimonials-header h2 {
+                font-size: 2rem;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+                /* single column */
+                gap: 1.5rem;
+                padding: 0 1rem;
+            }
+
+            /* FAQ Section */
+            .faq-header h2 {
+                font-size: 2rem;
+            }
+
+            .faq-list {
+                gap: 1rem;
+            }
+
+            .faq-question {
+                font-size: 1.1rem;
+            }
+
+            .faq-answer {
+                padding-left: 1rem;
+            }
+
+            /* Contact Section */
+            .contact-header h2 {
+                font-size: 2rem;
+            }
+
+            .contact-subtext {
+                font-size: 1rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+                /* single column */
+            }
+
+            .contact-form {
+                padding: 1.5rem;
+            }
+
+            .contact-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            /* Footer */
+            .footer-contact {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .footer-divider {
+                display: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="https://res.cloudinary.com/dwmq5hv5d/image/upload/v1767693920/N_-_1__1_-removebg-preview_1_hy88c2.png"
+                alt="Nourish With Roohi Logo">
+        </div>
+        <div class="brand-name">Nourrish With Ruhhi</div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Meet</h2>
+            <h1>Ruhhi Pinjani</h1>
+            <p class="credentials">• Certified Dietitian • Nutritionist • Disease Reversal Coach</p>
+            <p class="hero-description">
+                Heal naturally. Regain your energy. Build a lifestyle that lasts. Tailored plans for thyroid, PCOS,
+                diabetes, weight and long-term wellness.
+            </p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary">Book a Free Call</button>
+                <button class="btn btn-secondary">Download Guides</button>
+            </div>
+        </div>
+
+        <div class="hero-image-container">
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <img src="https://res.cloudinary.com/dwmq5hv5d/image/upload/f_auto,q_auto/v1767693348/ruhhi_mam_img_2_1_hxp3h3.png"
+                        alt="Roohi Pinjani - Certified Dietitian">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <div class="mission">
+            <h2>Your Wellness, My Mission</h2>
+            <button class="btn btn-light">Become Member</button>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Core Services</h2>
+        <div class="services-grid">
+            <!-- Service 1 -->
+            <div class="service-card">
+                <div class="service-icon">⚖️</div>
+                <h3>Thyroid & Hormonal Balance</h3>
+                <p>Personalized nutrition plans and lifestyle strategies focused on supporting thyroid function, hormone
+                    balance and energy restoration.</p>
+                <button class="btn btn-service">Book a Free Call</button>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card">
+                <div class="service-icon">👤</div>
+                <h3>PCOD / PCOS Support</h3>
+                <p>Diet and habit modifications to regulate cycles, improve insulin sensitivity and reduce symptoms
+                    using food-first strategies.</p>
+                <button class="btn btn-service">Book a Free Call</button>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card">
+                <div class="service-icon">🩺</div>
+                <h3>Diabetes & Metabolic Health</h3>
+                <p>Practical plans to manage blood sugar, reduce dependency on medications where possible (in
+                    coordination with your physician), and improve metabolic markers.</p>
+                <button class="btn btn-service">Book a Free Call</button>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h3>Weight Management (Loss & Gain)</h3>
+                <p>Sustainable weight plans that emphasize nutrient-dense food, sleep, stress and movement - not calorie
+                    obsession.</p>
+                <button class="btn btn-service">Book a Free Call</button>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="service-card">
+                <div class="service-icon">🦠</div>
+                <h3>Disease Reversal Programs</h3>
+                <p>Structured programs combining diet, lifestyle, and coaching to address root causes and support
+                    long-term reversal of metabolic conditions.</p>
+                <button class="btn btn-service">Book a Free Call</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="testimonials-header">
+            <h2>Success Stories from My Tribe</h2>
+        </div>
+
+        <div class="testimonials-grid">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">AJ</div>
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Anita J.</div>
+                        <div class="testimonial-outcome">Lost 7kg in 2 months</div>
+                    </div>
+                </div>
+                <div class="testimonial-quote">
+                    I lost 7kg in 2 months and my fatigue is gone — Roohi's plan fit my busy schedule.
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">NG</div>
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Nancy G.</div>
+                        <div class="testimonial-outcome">Cycles regularized</div>
+                    </div>
+                </div>
+                <div class="testimonial-quote">
+                    My cycles regularized after 3 months; no uncomfortable meds.
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">SA</div>
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">S. Agarwal</div>
+                        <div class="testimonial-outcome">Thyroid markers improved</div>
+                    </div>
+                </div>
+                <div class="testimonial-quote">
+                    My thyroid markers improved and I sleep again.
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonials-cta">
+            <button class="btn btn-primary">Read More Success Stories</button>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="faq-container">
+            <div class="faq-header">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Do I need blood tests before starting?
+                    </div>
+                    <div class="faq-answer">
+                        It helps. Bring recent labs if available — but if you don't have them, we can start with
+                        symptom-first planning and guide what tests to run.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Do you prescribe medication?
+                    </div>
+                    <div class="faq-answer">
+                        No — I don't prescribe. I work alongside your physician to optimize nutrition and lifestyle.
+                        Always consult your doctor before changing meds.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Is this suitable for vegetarians?
+                    </div>
+                    <div class="faq-answer">
+                        Absolutely. Plans are personalized and can be made vegetarian, vegan or omnivore.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How long until I feel better?
+                    </div>
+                    <div class="faq-answer">
+                        Many clients notice energy and sleep improvements in 2–4 weeks; meaningful metabolic changes
+                        usually take 8–12 weeks.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2>Ready to Start? Book a Free 15-Minute Discovery Call</h2>
+                <p class="contact-subtext">Tell me your goals and I'll recommend the right program.</p>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+91-XXXXX-XXXXX">
+                    </div>
+                    <div class="form-group">
+                        <label for="call-time">Preferred Call Time</label>
+                        <select id="call-time" name="call-time">
+                            <option value="">Select a time</option>
+                            <option value="morning">Morning (9 AM - 12 PM)</option>
+                            <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
+                            <option value="evening">Evening (4 PM - 7 PM)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="health-snapshot">Short Health Snapshot *</label>
+                    <textarea id="health-snapshot" name="health-snapshot" required
+                        placeholder="What would you like to change? (e.g., weight management, PCOS, thyroid issues, energy levels)"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="referral">How Did You Hear About Us?</label>
+                    <select id="referral" name="referral">
+                        <option value="">Select an option</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="google">Google Search</option>
+                        <option value="friend">Friend/Family Referral</option>
+                        <option value="youtube">YouTube</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-submit">Book Free Call</button>
+            </form>
+
+            <div class="alternative-contact">
+                <p>Prefer to connect directly?</p>
+                <div class="contact-links">
+                    <a href="https://wa.me/918830543452" class="contact-link" target="_blank">
+                        <span class="contact-icon">💬</span>
+                        WhatsApp
+                    </a>
+                    <a href="tel:+918830543452" class="contact-link">
+                        <span class="contact-icon">📞</span>
+                        Call Now
+                    </a>
+                    <a href="https://instagram.com/nourrish_with_ruhhi" class="contact-link" target="_blank">
+                        <span class="contact-icon">📸</span>
+                        Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-contact">
+                <span>📸 Instagram: <a href="https://instagram.com/nourrish_with_ruhhi"
+                        target="_blank">@nourrish_with_ruhhi</a></span>
+                <span class="footer-divider">•</span>
+                <span>📞 <a href="tel:+918830543452">+91-88305-43452</a></span>
+                <span class="footer-divider">•</span>
+                <span>💬 <a href="https://wa.me/918830543452" target="_blank">WhatsApp</a></span>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nourrish With Ruhhi. All rights reserved.</p>
+                <p>Certified Dietitian • Nutritionist • Disease Reversal Coach</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
